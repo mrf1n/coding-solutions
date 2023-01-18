@@ -5,13 +5,13 @@ public class T0012_IntegerToRoman {
         int[] tests = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 20, 58, 130, 490, 1994, 2890, 3999};
 //    int[] test = new int[]{2890,3999};
         for (int test : tests) {
-            System.out.println(test + " - " + intToRomanIfElse(test));
-            System.out.println(test + " - " + intToRomanMap(test));
-            System.out.println(test + " - " + intToRomanMapBest(test));
+            System.out.println(test + " - " + new T0012_IntegerToRoman().intToRomanIfElse(test));
+            System.out.println(test + " - " + new T0012_IntegerToRoman().intToRomanMap(test));
+            System.out.println(test + " - " + new T0012_IntegerToRoman().intToRomanMapBest(test));
         }
     }
 
-    public static String intToRomanIfElse(int num) {
+    public String intToRomanIfElse(int num) {
         String roman = "";
         while (num > 0) {
             if (num >= 1000) {
@@ -64,7 +64,7 @@ public class T0012_IntegerToRoman {
         return roman;
     }
 
-    public static String intToRomanMap(int num) {
+    public String intToRomanMap(int num) {
         int[] numsMap = new int[]{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 3, 2, 1};
         String[] stringsMap = new String[]{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "III", "II", "I"};
         String roman = "";
@@ -80,7 +80,7 @@ public class T0012_IntegerToRoman {
         return roman;
     }
 
-    public static String intToRomanMapBest(int num) {
+    public String intToRomanMapBest(int num) {
         int[] numsMap = new int[]{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 3, 2, 1};
         String[] stringsMap = new String[]{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "III", "II", "I"};
         String roman = "";

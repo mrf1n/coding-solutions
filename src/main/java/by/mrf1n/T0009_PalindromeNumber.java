@@ -6,13 +6,13 @@ public class T0009_PalindromeNumber {
         int test1 = 1223221;
         int test2 = 1255221;
         int test3 = 1234554321;
-        System.out.println(isPalindromeOne(test0));
-        System.out.println(isPalindromeTwo(test1));
-        System.out.println(isPalindromeThree(test2));
-        System.out.println(isPalindromeThree(test3));
+        System.out.println(new T0009_PalindromeNumber().isPalindromeOne(test0));
+        System.out.println(new T0009_PalindromeNumber().isPalindromeTwo(test1));
+        System.out.println(new T0009_PalindromeNumber().isPalindromeThree(test2));
+        System.out.println(new T0009_PalindromeNumber().isPalindromeThree(test3));
     }
 
-    public static boolean isPalindromeOne(int x) {
+    public boolean isPalindromeOne(int x) {
         char[] chars = Integer.toString(x).toCharArray();
         for (int i = 0, j = chars.length - 1; i < chars.length; i++, j--) {
             if (chars[i] != chars[j]) {
@@ -22,7 +22,7 @@ public class T0009_PalindromeNumber {
         return true;
     }
 
-    public static boolean isPalindromeTwo(int x) {
+    public boolean isPalindromeTwo(int x) {
         String s = Integer.toString(x);
         int length = s.length();
         for (int i = 0; i < length / 2; i++) {
@@ -34,7 +34,7 @@ public class T0009_PalindromeNumber {
         return true;
     }
 
-    public static boolean isPalindromeThree(int x) {
+    public boolean isPalindromeThree(int x) {
         if (x < 0)
             return false;
         int temp = x;

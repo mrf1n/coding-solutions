@@ -3,12 +3,12 @@ package by.mrf1n;
 public class T0695_MaxAreaOfIsland {
     public static void main(String[] args) {
         int[][] grid0 = new int[][]{{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
-        System.out.println(maxAreaOfIsland(grid0));
+        System.out.println(new T0695_MaxAreaOfIsland().maxAreaOfIsland(grid0));
         int[][] grid1 = new int[][]{{0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0}};
-        System.out.println(maxAreaOfIsland(grid1));
+        System.out.println(new T0695_MaxAreaOfIsland().maxAreaOfIsland(grid1));
     }
 
-    public static int maxAreaOfIsland(int[][] grid) {
+    public int maxAreaOfIsland(int[][] grid) {
         int max = 0;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
@@ -20,7 +20,7 @@ public class T0695_MaxAreaOfIsland {
         return max;
     }
 
-    public static int getArea(int[][] grid, int i, int j) {
+    public int getArea(int[][] grid, int i, int j) {
         int area = 0;
         if (grid[i][j] == 1) {
             grid[i][j] = 2;

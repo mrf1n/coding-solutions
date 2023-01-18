@@ -9,14 +9,14 @@ public class T0019_RemoveNodeFromEndOfList {
         ListNode test03 = new ListNode(1, new ListNode(2, new ListNode(3)));
         ListNode test04 = new ListNode(1, new ListNode(-2, new ListNode(3, new ListNode(4))));
         ListNode test05 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        System.out.println(removeNthFromEnd(test01, 1));
-        System.out.println(removeNthFromEnd(test02, 2));
-        System.out.println(removeNthFromEnd(test03, 3));
-        System.out.println(removeNthFromEnd(test04, 2));
-        System.out.println(removeNthFromEnd(test05, 5));
+        System.out.println(new T0019_RemoveNodeFromEndOfList().removeNthFromEnd(test01, 1));
+        System.out.println(new T0019_RemoveNodeFromEndOfList().removeNthFromEnd(test02, 2));
+        System.out.println(new T0019_RemoveNodeFromEndOfList().removeNthFromEnd(test03, 3));
+        System.out.println(new T0019_RemoveNodeFromEndOfList().removeNthFromEnd(test04, 2));
+        System.out.println(new T0019_RemoveNodeFromEndOfList().removeNthFromEnd(test05, 5));
     }
 
-    public static ListNode removeNthFromEnd(ListNode head, int n) {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode node = head, preDelete = null;
         for (int i = 0; i < n; i++) {
             node = node.next;

@@ -9,14 +9,14 @@ public class T0977_SquaresOfSortedArray {
         int[] test2 = new int[]{1};
         int[] test3 = new int[]{-5, -3, -2, -1};
         int[] test4 = new int[]{-1, 2, 2};
-        System.out.println(Arrays.toString(sortedSquaresIncorrect(test0)));
-        System.out.println(Arrays.toString(sortedSquares(test1)));
-        System.out.println(Arrays.toString(sortedSquaresBest(test2)));
-        System.out.println(Arrays.toString(sortedSquaresBest(test3)));
-        System.out.println(Arrays.toString(sortedSquaresBest(test4)));
+        System.out.println(Arrays.toString(new T0977_SquaresOfSortedArray().sortedSquaresIncorrect(test0)));
+        System.out.println(Arrays.toString(new T0977_SquaresOfSortedArray().sortedSquares(test1)));
+        System.out.println(Arrays.toString(new T0977_SquaresOfSortedArray().sortedSquaresBest(test2)));
+        System.out.println(Arrays.toString(new T0977_SquaresOfSortedArray().sortedSquaresBest(test3)));
+        System.out.println(Arrays.toString(new T0977_SquaresOfSortedArray().sortedSquaresBest(test4)));
     }
 
-    public static int[] sortedSquaresIncorrect(int[] nums) {
+    public int[] sortedSquaresIncorrect(int[] nums) {
         int[] outNums = new int[nums.length];
         int m = 0, l = 0, r = nums.length - 1;
         for (int i = 0; i < nums.length; i++) {
@@ -49,7 +49,7 @@ public class T0977_SquaresOfSortedArray {
         return outNums;
     }
 
-    public static int[] sortedSquares(int[] nums) {
+    public int[] sortedSquares(int[] nums) {
         int[] outNums = new int[nums.length];
         int m = 0, l = 0, r = nums.length - 1;
         for (int i = 0; i < nums.length; i++) {
@@ -85,7 +85,7 @@ public class T0977_SquaresOfSortedArray {
         return outNums;
     }
 
-    public static int[] sortedSquaresBest(int[] nums) {
+    public int[] sortedSquaresBest(int[] nums) {
         int l = 0, r = nums.length - 1, k = r;
         int[] outNums = new int[nums.length];
 

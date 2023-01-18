@@ -4,10 +4,10 @@ public class T0035_SearchInsertPosition {
     public static void main(String[] args) {
         int[] testA0 = new int[]{1, 3, 5, 6};
         int testT0 = 7;
-        System.out.println(searchInsert(testA0, testT0));
+        System.out.println(new T0035_SearchInsertPosition().searchInsert(testA0, testT0));
     }
 
-    public static int searchInsert(int[] nums, int target) {
+    public int searchInsert(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
         while (left <= right) {
             int mid = (left + right) / 2;

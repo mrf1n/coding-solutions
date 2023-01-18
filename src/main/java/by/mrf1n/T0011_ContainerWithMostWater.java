@@ -6,13 +6,13 @@ public class T0011_ContainerWithMostWater {
         int[] tests1 = new int[]{1, 1};
         int[] tests2 = new int[]{};
         int[] tests3 = new int[]{2, 3, 4, 5, 18, 17, 6};
-        System.out.println(maxAreaSimple(tests0));
-        System.out.println(maxAreaIncorrectBest(tests1));
-        System.out.println(maxAreaBest(tests2));
-        System.out.println(maxAreaBest(tests3));
+        System.out.println(new T0011_ContainerWithMostWater().maxAreaSimple(tests0));
+        System.out.println(new T0011_ContainerWithMostWater().maxAreaIncorrectBest(tests1));
+        System.out.println(new T0011_ContainerWithMostWater().maxAreaBest(tests2));
+        System.out.println(new T0011_ContainerWithMostWater().maxAreaBest(tests3));
     }
 
-    public static int maxAreaSimple(int[] height) {
+    public int maxAreaSimple(int[] height) {
         int max = 0;
         for (int i = 0; i < height.length - 1; i++) {
             for (int j = i + 1; j < height.length; j++) {
@@ -23,7 +23,7 @@ public class T0011_ContainerWithMostWater {
         return max;
     }
 
-    public static int maxAreaIncorrectBest(int[] height) {
+    public int maxAreaIncorrectBest(int[] height) {
         int limitHeight = 10000, maxCurrentArea = 0, posL = 0, posR = height.length - 1;
         for (int i = 0, j = height.length - 1; j > i; i++, j--) {
             int maxAreaRight = (posR - i) * Math.min(height[i], height[posR]);
@@ -46,7 +46,7 @@ public class T0011_ContainerWithMostWater {
         return maxCurrentArea;
     }
 
-    public static int maxAreaBest(int[] height) {
+    public int maxAreaBest(int[] height) {
         int limitHeight = 10000, maxArea = 0, i = 0, j = height.length - 1;
         while (j > i) {
             int currArea = (j - i) * Math.min(height[i], height[j]);

@@ -7,10 +7,11 @@ import java.util.Queue;
 
 public class T0116_PopulatingNextRightPointersInEachNode {
     public static void main(String[] args) {
-        //TODO find solution
+        Node nodeMain = new Node();
+        System.out.println(new T0116_PopulatingNextRightPointersInEachNode().connect(nodeMain));
     }
 
-    public static Node connect(Node node) {
+    public Node connect(Node node) {
         if (node == null) {
             return null;
         }

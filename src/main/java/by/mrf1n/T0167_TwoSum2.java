@@ -8,11 +8,11 @@ public class T0167_TwoSum2 {
     public static void main(String[] args) {
         int[] numbers0 = new int[]{2, 7, 11, 15};
         int target0 = 9;
-        System.out.println(Arrays.toString(twoSumPrevious(numbers0, target0)));
-        System.out.println(Arrays.toString(twoSum(numbers0, target0)));
+        System.out.println(Arrays.toString(new T0167_TwoSum2().twoSumPrevious(numbers0, target0)));
+        System.out.println(Arrays.toString(new T0167_TwoSum2().twoSum(numbers0, target0)));
     }
 
-    public static int[] twoSumPrevious(int[] numbers, int target) {
+    public int[] twoSumPrevious(int[] numbers, int target) {
         Map<Integer, Integer> indexMap = new HashMap<>();
         for (int i = 0; i < numbers.length; i++) {
             Integer ind = indexMap.get(numbers[i]);
@@ -24,7 +24,7 @@ public class T0167_TwoSum2 {
         return new int[]{-1, -1};
     }
 
-    public static int[] twoSum(int[] numbers, int target) {
+    public int[] twoSum(int[] numbers, int target) {
         int[] out = new int[]{-1, -1};
         int l = 0, r = numbers.length - 1;
         while (l < r) {

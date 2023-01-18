@@ -10,6 +10,10 @@ public class Node {
 
     }
 
+    public Node(int val) {
+        this.val = val;
+    }
+
     public Node(int val, Node left, Node right, Node next) {
         this.val = val;
         this.left = left;

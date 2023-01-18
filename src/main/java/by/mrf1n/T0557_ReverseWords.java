@@ -6,12 +6,12 @@ public class T0557_ReverseWords {
         String s0 = "";
         String s1 = "Dim";
         String s2 = "Dom Dim";
-        System.out.println(reverseWords(s0));
-        System.out.println(reverseWords(s1));
-        System.out.println(reverseWords(s2));
+        System.out.println(new T0557_ReverseWords().reverseWords(s0));
+        System.out.println(new T0557_ReverseWords().reverseWords(s1));
+        System.out.println(new T0557_ReverseWords().reverseWords(s2));
     }
 
-    public static String reverseWords(String s) {
+    public String reverseWords(String s) {
         char[] chars = s.toCharArray();
         int l = 0, r = 0;
         while (l < chars.length) {

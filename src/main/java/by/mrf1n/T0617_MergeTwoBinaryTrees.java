@@ -6,10 +6,10 @@ public class T0617_MergeTwoBinaryTrees {
     public static void main(String[] args) {
         TreeNode root01 = new TreeNode(1, new TreeNode(2), new TreeNode(1));
         TreeNode root02 = new TreeNode(2);
-        System.out.println(mergeTrees(root01, root02));
+        System.out.println(new T0617_MergeTwoBinaryTrees().mergeTrees(root01, root02));
     }
 
-    public static TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
+    public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if (root1 == null) {
             return root2;
         } else if (root2 == null) {

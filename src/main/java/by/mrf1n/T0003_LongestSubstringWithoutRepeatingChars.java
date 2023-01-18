@@ -6,12 +6,12 @@ import java.util.Set;
 public class T0003_LongestSubstringWithoutRepeatingChars {
     public static void main(String[] args) {
         String s0 = "abcdabcbb";
-        System.out.println(lengthOfLongestSubstringArray(s0));
+        System.out.println(new T0003_LongestSubstringWithoutRepeatingChars().lengthOfLongestSubstringArray(s0));
         String s1 = "azAZ019";
-        System.out.println(lengthOfLongestSubstringSet(s1));
+        System.out.println(new T0003_LongestSubstringWithoutRepeatingChars().lengthOfLongestSubstringSet(s1));
     }
 
-    public static int lengthOfLongestSubstringSet(String s) {
+    public int lengthOfLongestSubstringSet(String s) {
         int out = 0, l = 0;
         Set<Character> set = new HashSet<>();
 
@@ -25,7 +25,7 @@ public class T0003_LongestSubstringWithoutRepeatingChars {
         return out;
     }
 
-    public static int lengthOfLongestSubstringArray(String s) {
+    public int lengthOfLongestSubstringArray(String s) {
         int out = 0, l = 0;
         int[] count = new int[128];
 

@@ -13,12 +13,12 @@ public class T0567_PermutationInString {
 //        String s21 = "adc", s22 = "dcda";
 //        System.out.println(checkInclusion(s21, s22));
         String s31 = "ab", s32 = "eidboaoo";
-        System.out.println(checkInclusionWorst(s31, s32));
+        System.out.println(new T0567_PermutationInString().checkInclusionWorst(s31, s32));
         String s41 = "aab", s42 = "oskfabaerwe";
-        System.out.println(checkInclusion(s41, s42));
+        System.out.println(new T0567_PermutationInString().checkInclusion(s41, s42));
     }
 
-    public static boolean checkInclusionWorst(String s1, String s2) {
+    public boolean checkInclusionWorst(String s1, String s2) {
         Map<Character, Integer> map = new HashMap<>();
         int length = s1.length();
         for (int i = 0; i < length; i++) {
@@ -54,7 +54,7 @@ public class T0567_PermutationInString {
         return out;
     }
 
-    public static boolean checkInclusion(String s1, String s2) {
+    public boolean checkInclusion(String s1, String s2) {
         if (s1.length() > s2.length()) {
             return false;
         }
