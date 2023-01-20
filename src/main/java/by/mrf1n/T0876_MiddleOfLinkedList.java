@@ -28,17 +28,15 @@ public class T0876_MiddleOfLinkedList {
 
     public ListNode middleNode(ListNode head) {
         ListNode middle = head, tail = head;
-        int i = 1;
+        int i = 0;
         while (tail != null) {
             tail = tail.next;
-            if (i < 2) {
-                i++;
-            } else {
+            if (i % 2 != 0) {
                 if (middle.next != null) {
                     middle = middle.next;
                 }
-                i = 1;
             }
+            i++;
         }
         return middle;
     }
