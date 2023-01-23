@@ -6,12 +6,12 @@ import java.util.Map;
 
 public class T0567_PermutationInString {
     public static void main(String[] args) {
-//        String s01 = "asadab", s02 = "osdasabaaedlscml";
-//        System.out.println(checkInclusion(s01, s02));
-//        String s11 = "ab", s12 = "eidboaoo";
-//        System.out.println(checkInclusion(s11, s12));
-//        String s21 = "adc", s22 = "dcda";
-//        System.out.println(checkInclusion(s21, s22));
+        String s01 = "asadab", s02 = "osdasabaaedlscml";
+        System.out.println(new T0567_PermutationInString().checkInclusion(s01, s02));
+        String s11 = "ab", s12 = "eidboaoo";
+        System.out.println(new T0567_PermutationInString().checkInclusion(s11, s12));
+        String s21 = "adc", s22 = "dcda";
+        System.out.println(new T0567_PermutationInString().checkInclusion(s21, s22));
         String s31 = "ab", s32 = "eidboaoo";
         System.out.println(new T0567_PermutationInString().checkInclusionWorst(s31, s32));
         String s41 = "aab", s42 = "oskfabaerwe";

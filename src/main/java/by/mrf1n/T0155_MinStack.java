@@ -14,7 +14,7 @@ public class T0155_MinStack {
 
     static class MinStack {
 
-        Stack<int[]> st;
+        private final Stack<int[]> st;
 
         public MinStack() {
             st = new Stack<>();

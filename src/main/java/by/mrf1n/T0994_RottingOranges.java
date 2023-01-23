@@ -50,15 +50,6 @@ public class T0994_RottingOranges {
         return x >= 0 && y >= 0 && x < grid.length && y < grid[x].length;
     }
 
-    static class Item {
-        int x;
-        int y;
-        int expTime;
-
-        public Item(int x, int y, int expTime) {
-            this.x = x;
-            this.y = y;
-            this.expTime = expTime;
-        }
+    record Item(int x, int y, int expTime) {
     }
 }

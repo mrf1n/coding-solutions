@@ -41,15 +41,6 @@ public class T0542_01Matrix {
         }
     }
 
-    static class Item {
-        int x;
-        int y;
-        int dist;
-
-        public Item(int x, int y, int dist) {
-            this.x = x;
-            this.y = y;
-            this.dist = dist;
-        }
+    record Item(int x, int y, int dist) {
     }
 }

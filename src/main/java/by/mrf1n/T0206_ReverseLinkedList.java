@@ -11,8 +11,8 @@ public class T0206_ReverseLinkedList {
         System.out.println(new T0206_ReverseLinkedList().reverseList(listNode1));
         ListNode listNode2 = new ListNode(1);
         System.out.println(new T0206_ReverseLinkedList().reverseList(listNode2));
-        ListNode listNode3 = null;
-        System.out.println(new T0206_ReverseLinkedList().reverseList(listNode3));
+
+        System.out.println(new T0206_ReverseLinkedList().reverseList(null));
         ListNode listNode4 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
         System.out.println(new T0206_ReverseLinkedList().reverseListLC(listNode4));
     }
