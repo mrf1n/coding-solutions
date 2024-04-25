@@ -1,9 +1,9 @@
-package com.github.mrf1n.threeninethclassic.training
+package com.github.mrf1n.threeninethclassic.training.T1207
 
 import java.util.stream.IntStream
 import kotlin.math.sqrt
 
-fun main(args: Array<String>) {
+fun main() {
     val numbers = listOf(
         "4125673",
         "41256793",

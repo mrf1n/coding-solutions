@@ -1,6 +1,6 @@
-package com.github.mrf1n.threeninethclassic.training
+package com.github.mrf1n.threeninethclassic.training.T0557
 
-fun main(args: Array<String>) {
+fun main() {
     val numbers = listOf(
         6,
         19,
