@@ -13,7 +13,7 @@ fun main() {
 
 fun findMin(array: IntArray): Int {
     var minInd = 0
-    for ((index, i) in array.withIndex()) {
+    for ((index, _) in array.withIndex()) {
         if (array[index] < array[minInd]) {
             minInd = index
         }
