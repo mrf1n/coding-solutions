@@ -3,7 +3,7 @@ package com.github.mrf1n.threeninethclassic.training
 import java.io.*
 import java.util.*
 
-internal class InputReader private constructor(s: InputStream) {
+class InputReader private constructor(s: InputStream) {
     private val reader: BufferedReader = BufferedReader(InputStreamReader(s))
     private var tokenizer: StringTokenizer? = null
 
@@ -79,7 +79,7 @@ internal class InputReader private constructor(s: InputStream) {
     }
 }
 
-internal class OutputWriter: Closeable, Flushable {
+class OutputWriter: Closeable, Flushable {
     private var writer: Writer
 
     private constructor(os: OutputStream) {

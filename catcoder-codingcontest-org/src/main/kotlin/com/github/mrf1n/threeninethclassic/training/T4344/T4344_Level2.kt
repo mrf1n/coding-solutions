@@ -4,7 +4,7 @@ import com.github.mrf1n.threeninethclassic.training.CccSolutionWrapper
 
 fun main() {
     val inputOutput = CccSolutionWrapper("T4344", 2)
-    inputOutput.runLevel { input, output ->
+    inputOutput.runLevel { _, input, output ->
         val minutes: Int = input.nextInt()
         val array = IntArray(minutes)
         for (i in 0 until minutes) {

@@ -2,10 +2,10 @@ package com.github.mrf1n.threeninethclassic.training
 
 import java.io.File
 
-internal class CccSolutionWrapper(taskName: String, level: Int) {
+class CccSolutionWrapper(taskName: String, level: Int, val checkAnswer: Boolean = true) {
     private var levelFolder = File(initIOFolders(taskName, level), "level$level")
 
-    inline fun runLevel(action: (inputStream: InputReader, outputStream: OutputWriter) -> Unit) {
+   fun runLevel(action: (fileName: String, inputStream: InputReader, outputStream: OutputWriter) -> Unit) {
         val inFolder = File(levelFolder, "in")
         val outFolder = File(levelFolder, "out")
         val ansFolder = File(levelFolder, "ans")
@@ -18,12 +18,16 @@ internal class CccSolutionWrapper(taskName: String, level: Int) {
             val outputStream = outputFile.outputStream()
             inputStream.use {
                 outputStream.use {
-                    action(InputReader.fromInputStream(inputStream), OutputWriter.fromOutputStream(outputStream))
+                    action(
+                        inputFile.nameWithoutExtension,
+                        InputReader.fromInputStream(inputStream),
+                        OutputWriter.fromOutputStream(outputStream)
+                    )
                 }
             }
 
             val answerFile = File(ansFolder, "${inputFile.nameWithoutExtension}.out")
-            if (answerFile.exists()) {
+            if (answerFile.exists() && checkAnswer) {
                 compareOutAndAns(outputFile, answerFile)
             }
         }

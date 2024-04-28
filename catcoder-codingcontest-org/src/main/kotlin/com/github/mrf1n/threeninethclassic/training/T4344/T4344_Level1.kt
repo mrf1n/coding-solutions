@@ -4,7 +4,7 @@ import com.github.mrf1n.threeninethclassic.training.CccSolutionWrapper
 
 fun main() {
     val inputOutput = CccSolutionWrapper("T4344", 1)
-    inputOutput.runLevel { input, output ->
+    inputOutput.runLevel { _, input, output ->
         val count = input.nextInt()
         val array = IntRange(0, count - 1).map { input.nextInt() }.toIntArray()
         output.println(findMin(array))
