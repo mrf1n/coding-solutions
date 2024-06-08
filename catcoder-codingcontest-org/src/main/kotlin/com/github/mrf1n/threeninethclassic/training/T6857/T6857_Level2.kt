@@ -3,7 +3,7 @@ package com.github.mrf1n.threeninethclassic.training.T6857
 import com.github.mrf1n.threeninethclassic.training.CccSolutionWrapper
 
 fun main() {
-    val inputOutput = CccSolutionWrapper("T6857", 2)
+    val inputOutput = CccSolutionWrapper("T6857", "Lawn Mower", 2)
     inputOutput.runLevel { _, input, output ->
         val count = input.nextInt()
         for (i in 0 until count) {

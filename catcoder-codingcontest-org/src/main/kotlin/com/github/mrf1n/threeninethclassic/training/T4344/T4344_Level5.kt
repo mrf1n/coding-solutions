@@ -9,7 +9,7 @@ fun main() {
 }
 
 class T4344_Level5 : CccSolver {
-    override val solutionWrapper: CccSolutionWrapper = CccSolutionWrapper("T4344", 5, checkAnswer = false)
+    override val solutionWrapper: CccSolutionWrapper = CccSolutionWrapper("T4344", "Smartgrid", 5, checkAnswer = false)
     override fun solve() {
         solutionWrapper.runLevel { fileName, input, output ->
             val maxPower = input.nextInt()

@@ -9,7 +9,7 @@ fun main() {
 }
 
 class T4344_Level4 : CccSolver {
-    override val solutionWrapper = CccSolutionWrapper("T4344", 4, checkAnswer = false)
+    override val solutionWrapper = CccSolutionWrapper("T4344", "Smartgrid", 4, checkAnswer = false)
 
     override fun solve() {
         solutionWrapper.runLevel { fileName, input, output ->
