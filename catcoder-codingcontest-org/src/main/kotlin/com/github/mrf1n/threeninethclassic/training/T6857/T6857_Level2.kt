@@ -1,44 +1,46 @@
 package com.github.mrf1n.threeninethclassic.training.T6857
 
 import com.github.mrf1n.threeninethclassic.training.CccSolutionWrapper
+import com.github.mrf1n.threeninethclassic.training.CccSolver
+import kotlin.math.max
+import kotlin.math.min
 
 fun main() {
-    val inputOutput = CccSolutionWrapper("T6857", "Lawn Mower", 2)
-    inputOutput.runLevel { _, input, output ->
-        val count = input.nextInt()
-        for (i in 0 until count) {
-            val message = countTable(input.nextLine())
-            output.println("${message.first} ${message.second}")
-        }
-    }
+    T6857_Level2().solve()
 }
 
-fun countTable(text: String): Pair<Int, Int> {
-    var with = 0
-    var withMax = 0
-    var withMin = 0
-    var heigh = 0
-    var heighMax = 0
-    var heighMin = 0
-    for (c in text) {
-        when (c) {
-            'W' -> heigh = heigh.inc()
-            'D' -> with = with.inc()
-            'S' -> heigh = heigh.dec()
-            'A' -> with = with.dec()
-        }
-        if (with > withMax) {
-            withMax = with
-        }
-        if (heigh > heighMax) {
-            heighMax = heigh
-        }
-        if (with < withMin) {
-            withMin = with
-        }
-        if (heigh < heighMin) {
-            heighMin = heigh
+class T6857_Level2: CccSolver {
+    override val solutionWrapper = CccSolutionWrapper("T6857", "Lawn Mower", 2)
+
+    override fun solve() {
+        solutionWrapper.runLevel { _, input, output ->
+            val count = input.nextInt()
+            for (i in 0 until count) {
+                val message = countTable(input.nextLine())
+                output.println("${message.first} ${message.second}")
+            }
         }
     }
-    return Pair(withMax - withMin + 1, heighMax - heighMin + 1)
+
+    private fun countTable(path: String): Pair<Int, Int> {
+        var x = 0
+        var xMax = 0
+        var xMin = 0
+        var y = 0
+        var yMax = 0
+        var yMin = 0
+        for (move in path) {
+            when (move) {
+                'W' -> y = y.inc()
+                'D' -> x = x.inc()
+                'S' -> y = y.dec()
+                'A' -> x = x.dec()
+            }
+            xMax = max(xMax, x)
+            yMax = max(yMax, y)
+            xMin = min(xMin, x)
+            yMin = min(yMin, y)
+        }
+        return Pair(xMax - xMin + 1, yMax - yMin + 1)
+    }
 }
