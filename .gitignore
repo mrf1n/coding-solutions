@@ -4,6 +4,7 @@
 
 */build/
 */.gradle/
+*/bin/
 
 # VSCode
 .vscode
