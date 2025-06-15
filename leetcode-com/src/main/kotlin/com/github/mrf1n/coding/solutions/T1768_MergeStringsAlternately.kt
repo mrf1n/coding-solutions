@@ -1,8 +1,4 @@
-package com.github.mrf1n
-
-fun main() {
-    println(T1768_MergeStringsAlternately.mergeAlternately("ab", "pqrs"))
-}
+package com.github.mrf1n.coding.solutions
 
 object T1768_MergeStringsAlternately {
     fun mergeAlternately(word1: String, word2: String): String {

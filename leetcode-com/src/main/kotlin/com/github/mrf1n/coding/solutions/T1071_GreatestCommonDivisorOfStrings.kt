@@ -1,13 +1,6 @@
-package com.github.mrf1n
+package com.github.mrf1n.coding.solutions
 
 import kotlin.math.min
-
-fun main() {
-    println(T1071_GreatestCommonDivisorOfStrings.gcdOfStrings("ABCABC", "ABC"))
-    println(T1071_GreatestCommonDivisorOfStrings.gcdOfStrings("ABABAB", "AB"))
-    println(T1071_GreatestCommonDivisorOfStringsOptimized.gcdOfStrings("ABCABC", "ABC"))
-    println(T1071_GreatestCommonDivisorOfStringsOptimized.gcdOfStrings("ABABAB", "AB"))
-}
 
 object T1071_GreatestCommonDivisorOfStrings {
     fun gcdOfStrings(str1: String, str2: String): String {
