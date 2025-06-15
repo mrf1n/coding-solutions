@@ -1,6 +1,6 @@
-package com.github.mrf1n.threeninethclassic.training.T6589
+package com.github.mrf1n.coding.solutions.threeninethclassic.training.T6589
 
-import com.github.mrf1n.threeninethclassic.training.CccSolutionWrapper
+import com.github.mrf1n.coding.solutions.threeninethclassic.training.CccSolutionWrapper
 
 fun main() {
     val inputOutput = CccSolutionWrapper("T6589", "Lawn Mower (on-site)",4)

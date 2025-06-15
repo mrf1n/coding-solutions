@@ -1,4 +1,4 @@
-package com.github.mrf1n.threeninethclassic.training
+package com.github.mrf1n.coding.solutions.threeninethclassic.training
 
 import java.io.*
 import java.util.*

@@ -1,4 +1,4 @@
-package com.github.mrf1n.threeninethclassic.training.T1207
+package com.github.mrf1n.coding.solutions.threeninethclassic.training.T1207
 
 import java.util.stream.IntStream
 import kotlin.math.sqrt

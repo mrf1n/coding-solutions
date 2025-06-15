@@ -1,6 +1,6 @@
-package com.github.mrf1n.threeninethclassic.training.T4344
+package com.github.mrf1n.coding.solutions.threeninethclassic.training.T4344
 
-import com.github.mrf1n.threeninethclassic.training.CccSolutionWrapper
+import com.github.mrf1n.coding.solutions.threeninethclassic.training.CccSolutionWrapper
 
 fun main() {
     val inputOutput = CccSolutionWrapper("T4344", "Smartgrid", 2)

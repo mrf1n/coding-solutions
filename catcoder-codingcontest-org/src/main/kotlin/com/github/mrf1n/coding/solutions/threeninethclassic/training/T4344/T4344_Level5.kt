@@ -1,7 +1,7 @@
-package com.github.mrf1n.threeninethclassic.training.T4344
+package com.github.mrf1n.coding.solutions.threeninethclassic.training.T4344
 
-import com.github.mrf1n.threeninethclassic.training.CccSolutionWrapper
-import com.github.mrf1n.threeninethclassic.training.CccSolver
+import com.github.mrf1n.coding.solutions.threeninethclassic.training.CccSolutionWrapper
+import com.github.mrf1n.coding.solutions.threeninethclassic.training.CccSolver
 import kotlin.math.min
 
 fun main() {

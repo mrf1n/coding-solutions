@@ -1,4 +1,4 @@
-package com.github.mrf1n.threeninethclassic.training.T0557
+package com.github.mrf1n.coding.solutions.threeninethclassic.training.T0557
 
 fun main() {
     val numbers = listOf(

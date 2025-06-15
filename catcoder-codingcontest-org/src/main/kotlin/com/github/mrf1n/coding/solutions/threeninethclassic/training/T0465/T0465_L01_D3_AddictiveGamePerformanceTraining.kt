@@ -1,6 +1,6 @@
-package com.github.mrf1n.threeninethclassic.training.T0465
+package com.github.mrf1n.coding.solutions.threeninethclassic.training.T0465
 
-import com.github.mrf1n.threeninethclassic.training.InputReader
+import com.github.mrf1n.coding.solutions.threeninethclassic.training.InputReader
 
 internal class FlowRound(
     val rows: Int,
