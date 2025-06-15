@@ -1,6 +1,7 @@
-package com.github.mrf1n.threeninethclassic.training.T6857
+package com.github.mrf1n.coding.solutions.threeninethclassic.training.T6857
 
-import com.github.mrf1n.threeninethclassic.training.CccSolutionWrapper
+import com.github.mrf1n.coding.solutions.threeninethclassic.training.CccSolutionWrapper
+import kotlin.text.iterator
 
 fun main() {
     val inputOutput = CccSolutionWrapper("T6857", "Lawn Mower", 2)
