@@ -1,0 +1,5 @@
+[versions]
+kotest = "5.9.1"
+
+[libraries]
+kotest = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
