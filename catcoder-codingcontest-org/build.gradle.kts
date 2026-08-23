@@ -3,7 +3,7 @@ plugins {
     kotlin("jvm") version "1.9.23"
 }
 
-group = "com.github.mrf1n"
+group = "io.github.mrf1n"
 version = "1.0-SNAPSHOT"
 
 repositories {

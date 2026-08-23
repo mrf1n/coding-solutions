@@ -1,0 +1,22 @@
+package io.github.mrf1n.catcoder.T4344
+
+import io.github.mrf1n.catcoder.CccSolutionWrapper
+
+fun main() {
+    val inputOutput = CccSolutionWrapper("T4344", "Smartgrid", 1)
+    inputOutput.runLevel { _, input, output ->
+        val count = input.nextInt()
+        val array = IntRange(0, count - 1).map { input.nextInt() }.toIntArray()
+        output.println(findMin(array))
+    }
+}
+
+fun findMin(array: IntArray): Int {
+    var minInd = 0
+    for ((index, _) in array.withIndex()) {
+        if (array[index] < array[minInd]) {
+            minInd = index
+        }
+    }
+    return minInd
+}
